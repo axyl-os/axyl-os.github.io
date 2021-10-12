@@ -4,7 +4,7 @@
     background: #131516;
     max-width: 600px;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
     padding: 20px;
     box-sizing: border-box;
@@ -21,31 +21,11 @@ h1, h3 {
     padding-top: 50px;
 }
 
-#person-fullname {
-    margin-bottom:0;
-}
-#person-job {
-    margin-top:0;
-    font-weight: 500;
-    color: rgba(0,0,0,0.3);
-}
-
 #logo-image {
-    position: absolute;
+    position: center;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    top: -50px;
-    left: calc(50% - 50px);
-    border: 5px solid #131516;
-}
-
-#person-country {
-    position: absolute;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    top: 30px;
-    left: calc(50% + 20px);
-    border: 2px solid white;
+    width: 150px;
+    height: 150px;
+    left: calc(50% - 75px);
+    border: 0px solid #131516;
 }
