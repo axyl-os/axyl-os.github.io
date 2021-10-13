@@ -11,6 +11,11 @@
     text-align: center;
 }
 
+#copyright {
+    color: #D8D4CF;
+    font-size: 15px;
+}
+
 h1, h2, h3 {
     color: #D8D4CF;
     font-weight: 700;
