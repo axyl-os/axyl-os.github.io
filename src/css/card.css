@@ -29,8 +29,8 @@ h1, h2, h3 {
 #logo-image {
     position: center;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     left: calc(50% - 75px);
     border: 0px solid #131516;
 }
