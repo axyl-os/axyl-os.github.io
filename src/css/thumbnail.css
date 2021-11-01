@@ -20,6 +20,12 @@
     border-top-right-radius: 10px;
     overflow: hidden;
     opacity: 0.75;
+    transition: all 0.2s;
+}
+
+a .thumbnail-cover:hover {
+  filter: brightness(1.15);
+  opacity: 1;
 }
 
 .thumbnail .thumbnail-content {
