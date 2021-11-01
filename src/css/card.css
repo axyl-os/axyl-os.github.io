@@ -19,6 +19,12 @@
   padding-bottom: 65px;
 }
 
+.first-card__title {
+  margin: 0 0;
+  font-weight: 700;
+  font-size: 50px;
+}
+
 .second-card {
   padding-top: 50px;
   gap: 10px;
