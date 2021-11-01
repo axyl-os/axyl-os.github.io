@@ -19,6 +19,12 @@
   padding-bottom: 65px;
 }
 
+.first-card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .first-card p {
   font-size:30px;
   color: #D8D4CF;
