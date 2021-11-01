@@ -21,6 +21,7 @@ body {
     align-items: center;
     align-content: center;
     flex-direction: column;
+    gap: 8px;
     padding: 20px;
     padding-top: 70px;
     box-sizing: border-box;

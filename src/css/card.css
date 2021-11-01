@@ -12,6 +12,17 @@
     padding-top: 50px;
 }
 
+.first-card {
+  padding-bottom: 65px;
+}
+
+.second-card {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .copyright {
     color: #D8D4CF;
     font-size: 15px;
