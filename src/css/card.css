@@ -9,6 +9,7 @@
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
+    padding-top: 50px;
 }
 
 .copyright {
@@ -20,10 +21,6 @@ h1, h2, h3 {
     color: #D8D4CF;
     font-weight: 700;
     margin-bottom: 20px;
-}
-
-.information {
-    padding-top: 50px;
 }
 
 #logo-image {
