@@ -11,7 +11,7 @@
     text-align: center;
 }
 
-#copyright {
+.copyright {
     color: #D8D4CF;
     font-size: 15px;
 }
@@ -22,7 +22,7 @@ h1, h2, h3 {
     margin-bottom: 20px;
 }
 
-#information {
+.information {
     padding-top: 50px;
 }
 
