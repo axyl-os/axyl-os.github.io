@@ -9,7 +9,7 @@
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,6 +17,12 @@
 
 .first-card {
   padding-bottom: 65px;
+}
+
+.first-card p {
+  font-size:30px;
+  color: #D8D4CF;
+  margin: 15px 0;
 }
 
 .first-card__title {
@@ -56,4 +62,5 @@ h1, h2, h3 {
     height: auto;
     border-radius: 1%;
     border: 1px solid #D8D4CF;
+    margin: 20px 0;
 }
