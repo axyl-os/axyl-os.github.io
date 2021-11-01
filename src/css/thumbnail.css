@@ -94,4 +94,10 @@
     text-decoration: none;
     padding: 5px 10px;
     font-weight: 500;
+    transition: all 0.25s ease-out;
+}
+
+.thumbnail-footer a:hover {
+  background: white;
+  color: #3498db;
 }
