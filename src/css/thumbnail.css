@@ -104,6 +104,6 @@ a .thumbnail-cover:hover {
 }
 
 .thumbnail-footer a:hover {
-  background: white;
-  color: #3498db;
+    background: white;
+    color: #3498db;
 }
