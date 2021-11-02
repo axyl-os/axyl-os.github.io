@@ -20,6 +20,12 @@
     border-top-right-radius: 10px;
     overflow: hidden;
     opacity: 0.75;
+    transition: all 0.2s;
+}
+
+a .thumbnail-cover:hover {
+  filter: brightness(1.15);
+  opacity: 1;
 }
 
 .thumbnail .thumbnail-content {
@@ -94,4 +100,10 @@
     text-decoration: none;
     padding: 5px 10px;
     font-weight: 500;
+    transition: all 0.25s ease-out;
+}
+
+.thumbnail-footer a:hover {
+    background: white;
+    color: #3498db;
 }

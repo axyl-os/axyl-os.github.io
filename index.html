@@ -1,30 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Axyl - Main</title>
+        <title>Axyl</title>
         <meta charset="utf-8"/>
         <meta name="author" content="Gabriel Matthews"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta name="description" content="Website For Axyl OS Arch-based Distribution."/>
         <meta property="og:type" content="website"/>
+        <link rel="icon" type="image/png" href="src/img/axyl-logo-transparent.png">
+
+        <script src="https://kit.fontawesome.com/86c060d6eb.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./src/css/base.css"/>
+        <link rel="stylesheet" href="./src/css/card.css"/>
+        <link rel="stylesheet" href="./src/css/thumbnail.css"/>
+    </head>
+
     <body style="background-image: url(https://source.unsplash.com/random/1920x1080?minimalist)">
-        <div class="page">
-            <div class="card" id="information">
-                <img id="logo-image" src="src/img/axyl-logo.png"/>
-                <p style="font-size:30px; color: #D8D4CF">
+        <div id="container">
+            <div class="card first-card">
+              <div class="first-card__content">
+                <img id="logo-image" src="src/img/axyl-logo.png" alt="Axyl OS Logo"/>
+                <h2 class="first-card__title">Axyl</h2>
+                <p>
                     Introducing a new minimal<br>Arch Linux based Distribution.
                 </p>
-                <img id="product-gif" src="src/img/axyl-wm.gif"/>
-                <hr/><hr/><hr/><hr/>
 
-                <!-- First Section -->
+                <a href="https://github.com/axyl-os/axyl-iso/releases/tag/v21.10" class="download-button">
+                  <div class="download-button__icon"><i class="fas fa-long-arrow-alt-down"></i></div>
+                  <div class="download-button__text">
+                    <div>
+                      Download Now!
+                    </div>
+                    <div class="download-button__text--small">
+                      (Latest Release: v21.10)
+                    </div>
+                  </div>
+                </a>
+              </div>
+                <img id="product-gif" src="src/img/axyl-wm.gif" alt="Screenshots of Axyl OS">
             </div>
-                <hr/><hr/><hr/><hr/>
-            <div class="card" id="information">
+
+            <!-- First Section -->
+            <div class="card second-card">
                 <section>
-                    <h1>Tiling Window Managers of Axyl</h1>
-                    <div class="thumbnail" >
+                    <h2>Tiling Window Managers of Axyl</h2>
+                    <div class="thumbnail">
                         <a href="https://github.com/axyl-os/axyl-bspwm" target="_blank">
                             <div class="thumbnail-cover" style="background-image: url(./src/img/bspwm.png)"></div>
                         </a>
@@ -33,7 +55,7 @@
                             <p class="thumbnail-description">A tiling window manager that represents a full Binary Tree.</p>
                         </div>
                     </div>
-                    <div class="thumbnail" >
+                    <div class="thumbnail">
                         <a href="https://github.com/axyl-os/axyl-dwm" target="_blank">
                             <div class="thumbnail-cover" style="background-image: url(./src/img/dwm.png)"></div>
                         </a>
@@ -45,7 +67,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="thumbnail" >
+                    <div class="thumbnail">
                         <a href="https://github.com/axyl-os/axyl-qtile" target="_blank">
                             <div class="thumbnail-cover" style="background-image: url(./src/img/qtile.png)"></div>
                         </a>
@@ -54,7 +76,7 @@
                             <p class="thumbnail-description">Hackable tiling window manager written in Python.</p>
                         </div>
                     </div>
-                    <div class="thumbnail" >
+                    <div class="thumbnail">
                         <a href="https://github.com/axyl-os/axyl-xmonad" target="_blank">
                             <div class="thumbnail-cover" style="background-image: url(./src/img/xmonad.png)"></div>
                         </a>
@@ -63,26 +85,23 @@
                             <p class="thumbnail-description">Hackable tiling window manager written in Haskell.</p>
                         </div>
                     </div>
-                    <hr/>
                 </section>
-                <hr/><hr/><hr/><hr/>
-                
+
                 <!-- Second Section -->
-                
                 <section>
                     <h1>Useful Links</h1>
-                    <div class="thumbnail" >
+                    <div class="thumbnail">
                         <div class="thumbnail-cover" style="background-image: url(./src/img/axyl-logo.png)"></div>
                         <div class="thumbnail-content">
                             <span class="badge">Github Download</span>
-                            <p class="thumbnail-title">Axyl OS iso Download</p>
+                            <p class="thumbnail-title">Axyl OS ISO Download</p>
                             <p class="thumbnail-description">Latest Release: axyl-2021.10.26-x86_64.iso</p>
                             <div class="thumbnail-footer">
                                 <a href="https://github.com/axyl-os/axyl-iso/releases/download/v21.10/axyl-2021.10.26-x86_64.iso">Download</a>
                             </div>
                         </div>
                     </div>
-                    <div class="thumbnail" >
+                    <div class="thumbnail">
                         <div class="thumbnail-cover" style="background-image: url(https://source.unsplash.com/random/800*600?code)"></div>
                         <div class="thumbnail-content">
                             <span class="badge">README</span>
@@ -93,7 +112,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="thumbnail" >
+                    <div class="thumbnail">
                         <div class="thumbnail-cover" style="background-image: url(./src/img/dev.png)"></div>
                         <div class="thumbnail-content">
                             <span class="badge">Developer</span>
@@ -104,7 +123,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="thumbnail" >
+                    <div class="thumbnail">
                         <div class="thumbnail-cover" style="background-image: url()"></div>
                         <div class="thumbnail-content">
                             <span class="badge">In Development</span>
@@ -112,19 +131,10 @@
                             <p class="thumbnail-description">Coming Soon!</p>
                         </div>
                     </div>
-                    <hr/>
                 </section>
-                <p id="copyright">© Axyl | <a href="https://github.com/Kungger-git" id="copyright" target="_blank"><b>Gabriel Matthews</b></a>
+                <p class="copyright">© Axyl | <a href="https://github.com/Kungger-git" class="copyright" target="_blank"><b>Gabriel Matthews</b></a>
                 </p>
         </div>
+        </div>
     </body>
-
-    <!-- STYLE SHEETS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./src/css/base.css"/>
-    <link rel="stylesheet" href="./src/css/card.css"/>
-    <link rel="stylesheet" href="./src/css/thumbnail.css"/>
-    <link rel="stylesheet" href="./src/css/path.css"/>
-    <link rel="stylesheet" href="./src/css/descripton.css"/>
-    <link rel="stylesheet" href="./src/css/list.css"/>
 </html>
