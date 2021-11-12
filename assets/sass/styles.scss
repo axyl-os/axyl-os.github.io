@@ -302,9 +302,8 @@ h2 {
 
   h3 {
     margin: 9px 0;
-    font-size: 1.15em;
+    font-size: 1.5em;
     color: $light-1;
-    text-align: center;
   }
 
   .wm__entry {
@@ -329,6 +328,11 @@ h2 {
     color: $blue-4;
     margin-left: 2px;
     font-size: 80%;
+  }
+
+  .wm__footer {
+    font-size: 1.15em;
+    text-align: center;
   }
 }
 
