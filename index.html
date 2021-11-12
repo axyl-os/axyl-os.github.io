@@ -1,165 +1,312 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="author" content="Gabriel Matthews"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="icon" type="image/png" href="src/img/axyl-logo-transparent.png">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Gabriel Matthews"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/png" href="assets/img/axyl-logo.svg">
 
-        <!-- HTML Meta Tags -->
-        <title>Axyl -- Simple meets powerful</title>
-        <meta name="description" content="Axyl is an Arch Linux-based operating system designed to be simple yet powerful. Choose from four tiling window managers -- BSPWM, DWM, Qtile and Xmonad.">
+    <!-- HTML Meta Tags -->
+    <title>Axyl - The Linux distro for tiling window managers</title>
+    <meta name="description" content="Axyl is a window manager-centric distro built on top of Arch Linux. Choose from
+    several tiling WMs - i3, bspwm, dwm, XMonad and more.">
 
-        <!-- Facebook Meta Tags -->
-        <meta property="og:url" content="https://axyl-os.github.io/">
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="Axyl -- Simple meets powerful">
-        <meta property="og:description" content="Axyl is an Arch Linux-based operating system designed to be simple yet powerful. Choose from four tiling window managers -- BSPWM, DWM, Qtile and Xmonad.">
-        <meta property="og:image" content="https://raw.githubusercontent.com/axyl-os/axyl-os.github.io/master/src/img/axyl-social-preview.png">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://axyl-os.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Axyl - The distro for tiling WMs">
+    <meta property="og:description" content="Axyl is a window manager-centric distro built on top of Arch Linux. Choose from
+    several tiling window managers - i3, bspwm, dwm, XMonad and more.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/axyl-os/axyl-os.github.io/master/assets/img/axyl-social-preview.png">
 
-        <!-- Twitter Meta Tags -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta property="twitter:domain" content="axyl-os.github.io">
-        <meta property="twitter:url" content="https://axyl-os.github.io/">
-        <meta name="twitter:title" content="Axyl -- Simple meets powerful">
-        <meta name="twitter:description" content="Axyl is an Arch Linux-based operating system designed to be simple yet powerful. Choose from four tiling window managers -- BSPWM, DWM, Qtile and Xmonad.">
-        <meta name="twitter:image" content="https://raw.githubusercontent.com/axyl-os/axyl-os.github.io/master/src/img/axyl-social-preview.png">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="axyl-os.github.io">
+    <meta property="twitter:url" content="https://axyl-os.github.io/">
+    <meta name="twitter:title" content="Axyl - The distro for tiling WMs">
+    <meta name="twitter:description" content="Axyl is a window manager-centric distro built on top of Arch Linux. Choose from
+    several tiling window managers - i3, bspwm, dwm, XMonad and more.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/axyl-os/axyl-os.github.io/master/assets/img/axyl-social-preview.png">
 
-        <script src="https://kit.fontawesome.com/86c060d6eb.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./src/css/base.css"/>
-        <link rel="stylesheet" href="./src/css/card.css"/>
-        <link rel="stylesheet" href="./src/css/thumbnail.css"/>
-    </head>
+    <script src="https://kit.fontawesome.com/86c060d6eb.js" crossorigin="anonymous"></script>
+    <script src="assets/js/menu.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/styles.css"/>
+  </head>
 
-    <body style="background-image: url(src/img/bg.jpg)">
-        <div id="container">
-            <div class="card first-card">
-              <div class="first-card__content">
-                <img id="logo-image" src="src/img/axyl-logo.png" alt="Axyl OS Logo"/>
-                <h1 class="first-card__title">Axyl</h1>
-                <p>
-                    Introducing a new minimal<br>Arch Linux based Distribution.
-                </p>
+  <body>
+    <div id="container">
 
-                <a href="https://github.com/axyl-os/axyl-iso/releases/tag/v21.11" class="download-button">
-                  <div class="download-button__icon"><i class="fas fa-long-arrow-alt-down"></i></div>
-                  <div class="download-button__text">
-                    <div>
-                      Download Now!
-                    </div>
-                    <div class="download-button__text--small">
-                      (Latest Release: v21.11)
-                    </div>
-                  </div>
-                </a>
-              </div>
-                <img id="product-gif" src="src/img/axyl-wm.gif" alt="Screenshots of Axyl OS">
+      <div class="header">
+        <div class="header__content">
+          <div class="header__logo">
+            <img src="assets/img/axyl-logo.svg" alt="Axyl Logo" draggable=false>
+            <div class="header__logo__title">AXYL</div>
+          </div>
+
+          <div class="header__nav">
+            <div class="header__nav__btn">
+              <i class="fas fa-bars"></i>
             </div>
 
-            <!-- First Section -->
-            <div class="card second-card">
-                <section>
-                    <h2>Tiling Window Managers of Axyl</h2>
-                    <div class="thumbnail">
-                        <a href="https://github.com/axyl-os/axyl-bspwm" target="_blank">
-                            <div class="thumbnail-cover" style="background-image: url(./src/img/bspwm.png)"></div>
-                        </a>
-                        <div class="thumbnail-content">
-                            <p class="thumbnail-title">BSPWM</p>
-                            <p class="thumbnail-description">A tiling window manager that represents a full Binary Tree.</p>
-                        </div>
-                    </div>
-                    <div class="thumbnail">
-                        <a href="https://github.com/axyl-os/axyl-dwm" target="_blank">
-                            <div class="thumbnail-cover" style="background-image: url(./src/img/dwm.png)"></div>
-                        </a>
-                        <div class="thumbnail-content">
-                            <p class="thumbnail-title">DWM</p>
-                            <p class="thumbnail-description">Dynamic Window Manager by <strong>Suckless.</strong></p>
-                            <div class="thumbnail-footer">
-                                <a href="https://github.com/siduck76/" target="_blank">A Fork of <strong>siduck76's Chadwm</strong></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="thumbnail">
-                        <a href="https://github.com/axyl-os/axyl-qtile" target="_blank">
-                            <div class="thumbnail-cover" style="background-image: url(./src/img/qtile.png)"></div>
-                        </a>
-                        <div class="thumbnail-content">
-                            <p class="thumbnail-title">Qtile</p>
-                            <p class="thumbnail-description">Hackable tiling window manager written in Python.</p>
-                        </div>
-                    </div>
-                    <div class="thumbnail">
-                        <a href="https://github.com/axyl-os/axyl-spectrwm" target="_blank">
-                            <div class="thumbnail-cover" style="background-image: url(./src/img/spectrwm.png)"></div>
-                        </a>
-                        <div class="thumbnail-content">
-                            <p class="thumbnail-title">Spectrwm</p>
-                            <p class="thumbnail-description">A Window manager that tries to stay out of the way.</p>
-                        </div>
-                    </div>
-                    <div class="thumbnail">
-                        <a href="https://github.com/axyl-os/axyl-xmonad" target="_blank">
-                            <div class="thumbnail-cover" style="background-image: url(./src/img/xmonad.png)"></div>
-                        </a>
-                        <div class="thumbnail-content">
-                            <p class="thumbnail-title">Xmonad</p>
-                            <p class="thumbnail-description">Hackable tiling window manager written in Haskell.</p>
-                        </div>
-                    </div>
-                </section>
+            <ul class="header__nav__links">
+              <li><a href="#" class="header__nav--active">Home</a></li>
+              <li><a href="https://github.com/axyl-os/axyl-iso/releases">Download</a></li>
+              <li><a href="https://github.com/axyl-os/axyl-iso">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-                <!-- Second Section -->
-                <section>
-                    <h1>Useful Links</h1>
-                    <div class="thumbnail">
-                        <div class="thumbnail-cover" style="background-image: url(./src/img/axyl-logo.png)"></div>
-                        <div class="thumbnail-content">
-                            <span class="badge">Github Download</span>
-                            <p class="thumbnail-title">Axyl ISO Download</p>
-                            <p class="thumbnail-description">Latest Release: axyl-2021.11.11-x86_64.iso</p>
-                            <div class="thumbnail-footer">
-                                <a href="https://github.com/axyl-os/axyl-iso/releases/download/v21.11/axyl-2021.11.11-x86_64.iso">Download</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="thumbnail">
-                        <div class="thumbnail-cover" style="background-image: url(src/img/docs.jpg)"></div>
-                        <div class="thumbnail-content">
-                            <span class="badge">README</span>
-                            <p class="thumbnail-title">Documentation</p>
-                            <p class="thumbnail-description">A brief documentation of Axyl OS</p>
-                            <div class="thumbnail-footer">
-                                <a href="https://github.com/axyl-os/axyl-iso#readme" target="_blank">Take A Look!</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="thumbnail">
-                        <div class="thumbnail-cover" style="background-image: url(./src/img/dev.png)"></div>
-                        <div class="thumbnail-content">
-                            <span class="badge">Developer</span>
-                            <p class="thumbnail-title">Gabriel Matthews</p>
-                            <p class="thumbnail-description">Follow me. It's free, could always change your mind.</p>
-                            <div class="thumbnail-footer">
-                                <a href="https://github.com/Kungger-git" target="_blank">Visit</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="thumbnail">
-                        <div class="thumbnail-cover" style="background-image: url()"></div>
-                        <div class="thumbnail-content">
-                            <span class="badge">In Development</span>
-                            <p class="thumbnail-title">Wiki Page</p>
-                            <p class="thumbnail-description">Coming Soon!</p>
-                        </div>
-                    </div>
-                </section>
-                <p class="copyright">© Axyl | <a href="https://github.com/Kungger-git" class="copyright" target="_blank"><b>Gabriel Matthews</b></a>
-                </p>
+      <div class="hero section">
+        <div class="section__content">
+          <div class="hero__text">
+            <h1>Welcome to Axyl.</h1>
+
+            <p>
+            Axyl is a Linux distro centered on tiling window managers.<br>
+            Level up your productivity with i3, bspwm, dwm and more.
+            </p>
+
+            <div class="hero__buttons">
+              <a class="btn btn--download" href="https://github.com/axyl-os/axyl-iso/releases">
+                <i class="fas fa-download"></i>
+                Download Now
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__image">
+            <img src="./assets/img/hero-preview.png" alt="XMonad desktop">
+          </div>
         </div>
+      </div>
+
+      <div class="features section">
+        <div class="section__content">
+          <div class="features__header">
+            <h2>What is Axyl?</h2>
+          </div>
+
+          <div class="features__cards">
+
+            <div class="feature">
+              <div class="feature__icon">
+                <i class="far fa-window-restore"></i>
+              </div>
+              <h3 class="feature__header">
+                Tiling Windows
+              </h3>
+              <div class="feature__body">
+                Axyl focuses fully on tiling WMs, so we can give you
+                the best experience for advanced users.
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="feature__icon">
+                <i class="fas fa-desktop"></i>
+              </div>
+              <h3 class="feature__header">
+                Solid Software
+              </h3>
+              <div class="feature__body">
+                This distro comes with your favorite programs like Alacritty, Polybar
+                and NvChad.
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="feature__icon">
+                <i class="fas fa-check-square"></i>
+              </div>
+              <h3 class="feature__header">
+                Minimal Base
+              </h3>
+              <div class="feature__body">
+                Built on Arch Linux, Axyl follows the KISS principles, keeping the base system minimal yet flexible.
+              </div>
+            </div>
+
+          </div>
         </div>
-    </body>
+      </div>
+
+      <div class="wm section">
+        <div class="section__content">
+          <div class="wm__header">
+            <h2>Window Managers</h2>
+            <div>
+              In Axyl, each window manager has its own colorscheme.<br>
+              Choose one, or install as many as you want.
+            </div>
+          </div>
+
+          <div class="wm__cards">
+
+            <div class="wm__entry">
+              <div class="wm__image">
+                <img src="assets/img/window-managers/i3.svg" alt="i3" draggable=false>
+              </div>
+
+              <div class="wm__text">
+                <h3 class="wm__text__title">
+                  i3 <span class="wm__text__title--gray">(default)</span>
+                </h3>
+                <div class="wm__text__body">
+                  The classic tiling window manager.
+                  i3-gaps adds gaps between windows.
+                </div>
+
+                <div class="wm__theme everforest">
+                  <div class="wm__theme__circles">
+                    <i class="circle--red fas fa-circle"></i>
+                    <i class="circle--green fas fa-circle"></i>
+                    <i class="circle--blue fas fa-circle"></i>
+                  </div>
+                  <div class="wm__theme__name">
+                    Everforest
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="wm__entry">
+              <div class="wm__image">
+                <img src="assets/img/window-managers/bspwm.svg" alt="bspwm" draggable=false>
+              </div>
+              <div class="wm__text">
+                <h3 class="wm__text__title">
+                  bspwm
+                </h3>
+                <div class="wm__text__body">
+                  A tiling window manager that represents a full binary tree.
+                </div>
+
+                <div class="wm__theme dracula">
+                  <div class="wm__theme__circles">
+                    <i class="circle--red fas fa-circle"></i>
+                    <i class="circle--green fas fa-circle"></i>
+                    <i class="circle--blue fas fa-circle"></i>
+                  </div>
+                  <div class="wm__theme__name">
+                    Dracula
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="wm__entry">
+              <div class="wm__image">
+                <img src="assets/img/window-managers/dwm.svg" alt="dwm" draggable=false>
+              </div>
+              <div class="wm__text">
+                <h3 class="wm__text__title">
+                  dwm
+                </h3>
+                <div class="wm__text__body">
+                  The dynamic window manager by suckless.
+                  Axyl uses <a href="https://github.com/siduck/chadwm">chadwm</a>,
+                  from the creator of NvChad.
+                </div>
+
+                <div class="wm__theme onedark">
+                  <div class="wm__theme__circles">
+                    <i class="circle--red fas fa-circle"></i>
+                    <i class="circle--green fas fa-circle"></i>
+                    <i class="circle--blue fas fa-circle"></i>
+                  </div>
+                  <div class="wm__theme__name">
+                    One Dark
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="wm__entry">
+              <div class="wm__image">
+                <img src="assets/img/window-managers/xmonad.svg" alt="XMonad" draggable=false>
+              </div>
+              <div class="wm__text">
+                <h3 class="wm__text__title">
+                  XMonad
+                </h3>
+                <div class="wm__text__body">
+                  A dynamic window manager written and configured in Haskell.
+                </div>
+
+                <div class="wm__theme nord">
+                  <div class="wm__theme__circles">
+                    <i class="circle--red fas fa-circle"></i>
+                    <i class="circle--green fas fa-circle"></i>
+                    <i class="circle--blue fas fa-circle"></i>
+                  </div>
+                  <div class="wm__theme__name">
+                    Nord
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <h3 class="wm__footer">Also Available: Qtile, Leftwm, Spectrwm</h3>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial section">
+        <div class="section__content">
+          <div class="testimonial__quote">
+            “I tested Axyl and installed it. Runs like a Ferrari
+            and no issues at all. It is a simple distribution with all
+            I need to have the job done.”
+          </div>
+          <div class="testimonial__author">
+            <strong>― Nelson Duarte</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="call-to-action section">
+        <div class="section__content">
+          <div class="call-to-action__text">
+            <div class="call-to-action__title">
+              <h3>ARE YOU READY?</h3>
+            </div>
+            <div class="call-to-action__body">
+              Join the hundreds who have downloaded Axyl.
+              Try it now in a live ISO - no need to install.
+            </div>
+          </div>
+          <div class="call-to-action__button">
+            <a class="btn btn--download" href="https://github.com/axyl-os/axyl-iso/releases">
+              <i class="fas fa-download"></i>
+              Download Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer section">
+        <div class="section__content">
+          <div class="footer__logo">
+            <img src="assets/img/axyl-logo.svg" alt="Axyl Logo" draggable=false>
+          </div>
+
+          <div class="footer__copyright">
+            <div>
+              <i class="fas fa-copyright"></i> 2021 The Axyl Team.
+            </div>
+            <div>
+              Created by <a href="https://github.com/Kungger-git">Gabriel Matthews</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
 </html>
