@@ -466,17 +466,18 @@ h1, h2, h3, h4 {
 
 .testimonial {
   padding: 0;
-  margin: 10px 0;
+  margin: 40px 0 110px 0;
 
   .section__content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
     width: 65%;
-    max-width: 500px;
+    max-width: 540px;
     margin: 15px 0;
-    padding: 24px 30px;
-    border-radius: 7px;
+    padding: 55px 30px;
+    border-radius: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
 
     background-color: $dark-3;
@@ -490,6 +491,7 @@ h1, h2, h3, h4 {
   .testimonial__quote {
     font-size: 1.4em;
     margin: 10px 0;
+    text-align: center;
   }
 
   .testimonial__author {
