@@ -54,10 +54,6 @@ h2 {
   font-size: 1.9em;
 }
 
-h1, h2, h3, h4 {
-  color: $light-3;
-}
-
 #container {
   display: flex;
   flex-direction: column;
@@ -108,7 +104,7 @@ h1, h2, h3, h4 {
       font-weight: 600;
       font-size: 1.3em;
       margin: 0 9px;
-      transition: all 0.12s ease-in-out;
+      transition: all 0.20s ease-in-out;
     }
 
     a:hover {
@@ -187,28 +183,20 @@ h1, h2, h3, h4 {
 }
 
 .btn {
-  display: flex;
-  gap: 7px;
-  align-items: center;
   border: 0;
   border-radius: 6px;
-  padding: 6px 16px;
+  padding: 8px 18px;
   font-weight: 600;
   text-decoration: none;
   color: $dark-1;
   background-color: $blue-2;
-  border: 2px solid $blue-2;
   user-select: none;
-  transition: all 0.25s ease-in-out;
-
-  .fas {
-    font-size: 1.1em;
-  }
+  transition: all 0.2s ease-in-out;
 }
 
 .btn--download:hover {
-  color: $blue-2;
-  background-color: $dark-2;
+  color: $dark-2;
+  background-color: $light-1;
 }
 
 .btn--install {
@@ -314,6 +302,7 @@ h1, h2, h3, h4 {
     h3 {
       margin: 9px 0;
       font-size: 1.5em;
+      color: $light-1;
     }
   }
 
@@ -348,30 +337,16 @@ h1, h2, h3, h4 {
 
   .wm__bonus {
     text-align: center;
+    color: $light-2;
     display: flex;
     flex-direction: column;
-    gap: 5px;
     margin: 0;
     padding: 0;
-
-    .wm__bonus__name {
-      width: 90px;
-      font-weight: 700;
-    }
 
     li {
       list-style-type: none;
       text-align: right;
       display: flex;
-      gap: 8px;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .wm__theme {
-      flex-basis: auto;
-      flex-grow: 1;
-      min-width: 220px;
     }
   }
 }
@@ -457,36 +432,35 @@ h1, h2, h3, h4 {
 }
 
 .wm__theme.tokyo {
-  @include wm-colorscheme($bg:    #1a1b26,
-                          $fg:    #a9b1d6,
-                          $red:   #f7768e,
-                          $green: #9ece6a,
-                          $blue:  #7aa2f7);
+  @include wm-colorscheme($bg:    #1d1f21,
+                          $fg:    #c5c8c6,
+                          $red:   #cc6666,
+                          $green: #b5bd68,
+                          $blue:  #81a2be);
 }
 
-.wm__theme.gruvbox-material {
-  @include wm-colorscheme($bg:    #222526,
-                          $fg:    #dfbf8e,
-                          $red:   #ea6962,
-                          $green: #a9b665,
-                          $blue:  #7daea3);
+.wm__theme.tokyo {
+  @include wm-colorscheme($bg:    #1d1f21,
+                          $fg:    #c5c8c6,
+                          $red:   #cc6666,
+                          $green: #b5bd68,
+                          $blue:  #81a2be);
 }
 
 .testimonial {
   padding: 0;
-  margin: 40px 0 110px 0;
+  margin: 10px 0;
 
   .section__content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
     width: 65%;
-    max-width: 540px;
+    max-width: 500px;
     margin: 15px 0;
-    padding: 55px 50px;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    padding: 24px 30px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
 
     background-color: $dark-3;
     color: $light-1;
@@ -496,36 +470,21 @@ h1, h2, h3, h4 {
     margin: 10px 0;
   }
 
-  .testimonial__symbol {
-    font-size: 2.2em;
-    color: $blue-2;
-  }
-
   .testimonial__quote {
     font-size: 1.4em;
-    margin: 15px 0 15px 0;
-    text-align: center;
+    margin: 10px 0;
   }
 
   .testimonial__author {
     font-size: 1.4em;
-    align-self: center;
-    color: $blue-2;
+    align-self: flex-end;
   }
 }
 
 .call-to-action {
-  $blue-background: #4B6E99;
-
   text-align: center;
-  padding-top: 45px;
-  padding-bottom: 45px;
-  background-color: $blue-background;
-  color: $light-3;
-
-  ::selection {
-    background-color: $blue-2;
-  }
+  margin-top: 40px;
+  margin-bottom: 10px;
 
   .section__content {
     display: flex;
@@ -533,28 +492,20 @@ h1, h2, h3, h4 {
     flex-direction: column;
     gap: 30px;
     width: 85%;
-    max-width: 750px;
+    max-width: 550px;
     margin: 70px 0;
   }
 
   .call-to-action__title {
-    font-size: 2.1em;
+    font-size: 1.9em;
 
     h3 {
-      margin: 10px 0;
+      margin: 8px 0;
     }
-  }
-
-  .call-to-action__text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .call-to-action__body {
     font-size: 1.4em;
-    max-width: 550px;
-    margin-bottom: 22px;
   }
 
   .call-to-action__button {
@@ -563,25 +514,16 @@ h1, h2, h3, h4 {
 
   .btn--download {
     padding: 12px 26px;
-    gap: 9px;
     border-radius: 10px;
-    font-size: 1.3em;
-    color: $blue-background;
-    background-color: $light-3;
-    border: 2px solid $light-3;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .btn--download:hover {
-    color: $light-3;
-    background-color: $blue-background;
+    font-size: 1.2em;
   }
 }
 
 .footer {
   background-color: $dark-1;
   color: $light-1;
-  padding: 16px 0 16px 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
   text-align: left;
   font-size: 0.95em;
 
@@ -619,14 +561,6 @@ h1, h2, h3, h4 {
     display: flex;
     flex-direction: column;
     gap: 7px;
-  }
-
-  a {
-    color: $light-1;
-  }
-
-  a:hover {
-    color: $blue-2;
   }
 
   .footer__copyright {
@@ -734,26 +668,17 @@ h1, h2, h3, h4 {
       text-align: center;
       gap: 5px;
 
-      h3 {
-        margin: 7px 0;
-      }
-
       .wm__theme {
         margin: 8px 0;
         align-self: center;
         padding-left: 10px; padding-right: 10px;
       }
     }
-
-    .wm__bonus {
-      font-size: 0.90em;
-
-      .wm__theme {
-        min-width: 190px;
-      }
-    }
   }
 
+  .wm__theme {
+    min-width: 50px !important;
+  }
 
   .footer {
 
