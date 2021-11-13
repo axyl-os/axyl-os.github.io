@@ -540,23 +540,28 @@ h1, h2, h3, h4 {
   width: 65%;
   max-width: 540px;
   margin: 15px 0;
-  padding: 55px 30px;
+  padding: 55px 50px;
   border-radius: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   background-color: #434C5E;
   color: #D8DEE9;
 }
 .testimonial h2 {
   margin: 10px 0;
 }
+.testimonial .testimonial__symbol {
+  font-size: 2.2em;
+  color: #88C0D0;
+}
 .testimonial .testimonial__quote {
   font-size: 1.4em;
-  margin: 10px 0;
+  margin: 15px 0 15px 0;
   text-align: center;
 }
 .testimonial .testimonial__author {
   font-size: 1.4em;
-  align-self: flex-end;
+  align-self: center;
+  color: #88C0D0;
 }
 
 .call-to-action {
