@@ -266,10 +266,34 @@ h2 {
   margin-left: 2px;
   font-size: 80%;
 }
-.wm .wm__footer {
-  font-size: 1.15em;
+.wm .wm__footer h3 {
   text-align: center;
-  color: #E5E9F0;
+}
+.wm .wm__bonus {
+  text-align: center;
+  color: #D8DEE9;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+}
+.wm .wm__bonus .wm__bonus__name {
+  width: 100px;
+  font-weight: 700;
+}
+.wm .wm__bonus li {
+  list-style-type: none;
+  text-align: right;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.wm .wm__bonus .wm__theme {
+  flex-basis: auto;
+  flex-grow: 1;
+  min-width: 220px;
 }
 
 .wm__theme.everforest {
@@ -430,6 +454,70 @@ h2 {
 }
 .wm__theme.tomorrow .circle--blue {
   color: #81a2be;
+}
+
+.wm__theme.tokyo {
+  margin-top: auto;
+  display: flex;
+  font-family: "Roboto Mono", monospace;
+  align-self: flex-start;
+  padding: 4px 8px;
+  border-radius: 5px;
+  min-width: 165px;
+  user-select: none;
+  background-color: #1a1b26;
+  color: #a9b1d6;
+}
+.wm__theme.tokyo .wm__theme__circles {
+  margin-right: 11px;
+  margin-left: 4px;
+}
+.wm__theme.tokyo .wm__theme__name {
+  user-select: text;
+}
+.wm__theme.tokyo i {
+  margin: 0 -4px;
+}
+.wm__theme.tokyo .circle--red {
+  color: #f7768e;
+}
+.wm__theme.tokyo .circle--green {
+  color: #9ece6a;
+}
+.wm__theme.tokyo .circle--blue {
+  color: #7aa2f7;
+}
+
+.wm__theme.gruvbox-material {
+  margin-top: auto;
+  display: flex;
+  font-family: "Roboto Mono", monospace;
+  align-self: flex-start;
+  padding: 4px 8px;
+  border-radius: 5px;
+  min-width: 165px;
+  user-select: none;
+  background-color: #222526;
+  color: #dfbf8e;
+}
+.wm__theme.gruvbox-material .wm__theme__circles {
+  margin-right: 11px;
+  margin-left: 4px;
+}
+.wm__theme.gruvbox-material .wm__theme__name {
+  user-select: text;
+}
+.wm__theme.gruvbox-material i {
+  margin: 0 -4px;
+}
+.wm__theme.gruvbox-material .circle--red {
+  color: #ea6962;
+}
+.wm__theme.gruvbox-material .circle--green {
+  color: #a9b665;
+}
+.wm__theme.gruvbox-material .circle--blue {
+  color: #7daea3;
 }
 
 .testimonial {
@@ -625,10 +713,6 @@ h2 {
     align-self: center;
     padding-left: 10px;
     padding-right: 10px;
-  }
-
-  .wm__theme {
-    min-width: 50px !important;
   }
 
   .footer .section__content {

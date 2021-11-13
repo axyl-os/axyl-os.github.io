@@ -331,10 +331,38 @@ h2 {
     font-size: 80%;
   }
 
-  .wm__footer {
-    font-size: 1.15em;
+  .wm__footer h3 {
     text-align: center;
-    color: $light-2;
+  }
+
+  .wm__bonus {
+    text-align: center;
+    color: $light-1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+
+    .wm__bonus__name {
+      width: 100px;
+      font-weight: 700;
+    }
+
+    li {
+      list-style-type: none;
+      text-align: right;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .wm__theme {
+      flex-basis: auto;
+      flex-grow: 1;
+      min-width: 220px;
+    }
   }
 }
 
@@ -418,6 +446,21 @@ h2 {
                           $blue:  #81a2be);
 }
 
+.wm__theme.tokyo {
+  @include wm-colorscheme($bg:    #1a1b26,
+                          $fg:    #a9b1d6,
+                          $red:   #f7768e,
+                          $green: #9ece6a,
+                          $blue:  #7aa2f7);
+}
+
+.wm__theme.gruvbox-material {
+  @include wm-colorscheme($bg:    #222526,
+                          $fg:    #dfbf8e,
+                          $red:   #ea6962,
+                          $green: #a9b665,
+                          $blue:  #7daea3);
+}
 
 .testimonial {
   padding: 0;
@@ -646,10 +689,6 @@ h2 {
         padding-left: 10px; padding-right: 10px;
       }
     }
-  }
-
-  .wm__theme {
-    min-width: 50px !important;
   }
 
   .footer {
