@@ -240,10 +240,10 @@ h2 {
   flex-flow: row wrap;
   justify-content: center;
 }
-.wm h3 {
+.wm .wm__cards h3 {
   margin: 9px 0;
   font-size: 1.5em;
-  color: #8FBCBB;
+  color: #D8DEE9;
 }
 .wm .wm__entry {
   display: flex;

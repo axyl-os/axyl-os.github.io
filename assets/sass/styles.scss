@@ -43,7 +43,6 @@ body {
 a {
   color: $blue-2;
   text-decoration: none;
-  transition: all 0.15s ease-out;
 }
 
 a:hover {
@@ -105,7 +104,7 @@ h2 {
       font-weight: 600;
       font-size: 1.3em;
       margin: 0 9px;
-      transition: all 0.15s ease-out;
+      transition: all 0.20s ease-in-out;
     }
 
     a:hover {
@@ -142,8 +141,8 @@ h2 {
 .hero {
   width: 100%;
   font-size: 1.2em;
-  padding-top: 50px;
-  padding-bottom: 90px;
+  padding-top: 80px;
+  padding-bottom: 120px;
 
   .section__content {
     display: flex;
@@ -153,6 +152,7 @@ h2 {
     gap: 15px;
 
     h1 {
+      font-size: 2.1em;
       margin: 5px 0;
     }
 
@@ -191,7 +191,7 @@ h2 {
   color: $dark-1;
   background-color: $blue-2;
   user-select: none;
-  transition: all 0.2s ease-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn--download:hover {
@@ -212,7 +212,7 @@ h2 {
 
 .features {
   background-color: $dark-1;
-  padding: 60px 0;
+  padding: 90px 0;
   align-items: center;
 
   .section__content {
@@ -298,13 +298,14 @@ h2 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+
+    h3 {
+      margin: 9px 0;
+      font-size: 1.5em;
+      color: $light-1;
+    }
   }
 
-  h3 {
-    margin: 9px 0;
-    font-size: 1.5em;
-    color: $light-1;
-  }
 
   .wm__entry {
     display: flex;
@@ -333,6 +334,7 @@ h2 {
   .wm__footer {
     font-size: 1.15em;
     text-align: center;
+    color: $light-2;
   }
 }
 
@@ -453,6 +455,8 @@ h2 {
 
 .call-to-action {
   text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
 
   .section__content {
     display: flex;
@@ -461,7 +465,7 @@ h2 {
     gap: 30px;
     width: 85%;
     max-width: 550px;
-    margin: 50px 0;
+    margin: 70px 0;
   }
 
   .call-to-action__title {
@@ -553,7 +557,7 @@ h2 {
       .header__nav__btn {
         display: block;
         font-size: 2em;
-        transition: all 0.20s ease-out;
+        transition: all 0.20s ease-in-out;
       }
 
       .header__nav__btn.responsive {
@@ -595,13 +599,15 @@ h2 {
 
   .hero {
     padding: 65px 0;
+    height: 55vh;
+    margin-top: 60px;
 
     br {
       display: none;
     }
 
-    h1 {
-      font-size: 1.5em;
+    .hero__text h1 {
+      font-size: 1.7em;
     }
 
     p {
