@@ -500,8 +500,14 @@ h1, h2, h3, h4 {
 
 .call-to-action {
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 10px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: $blue-4;
+  color: $light-3;
+
+  ::selection {
+    background-color: $blue-2;
+  }
 
   .section__content {
     display: flex;
@@ -509,20 +515,28 @@ h1, h2, h3, h4 {
     flex-direction: column;
     gap: 30px;
     width: 85%;
-    max-width: 550px;
+    max-width: 750px;
     margin: 70px 0;
   }
 
   .call-to-action__title {
-    font-size: 1.9em;
+    font-size: 2.1em;
 
     h3 {
-      margin: 8px 0;
+      margin: 10px 0;
     }
+  }
+
+  .call-to-action__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .call-to-action__body {
     font-size: 1.4em;
+    max-width: 550px;
+    margin-bottom: 25px;
   }
 
   .call-to-action__button {
@@ -532,7 +546,16 @@ h1, h2, h3, h4 {
   .btn--download {
     padding: 12px 26px;
     border-radius: 10px;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    color: $blue-4;
+    background-color: $light-3;
+    border: 2px solid $light-3;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn--download:hover {
+    color: $light-3;
+    background-color: $blue-4;
   }
 }
 
