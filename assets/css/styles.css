@@ -743,6 +743,9 @@ h1, h2, h3, h4 {
     text-align: center;
     gap: 5px;
   }
+  .wm .wm__entry h3 {
+    margin: 7px 0;
+  }
   .wm .wm__entry .wm__theme {
     margin: 8px 0;
     align-self: center;

@@ -726,6 +726,10 @@ h1, h2, h3, h4 {
       text-align: center;
       gap: 5px;
 
+      h3 {
+        margin: 7px 0;
+      }
+
       .wm__theme {
         margin: 8px 0;
         align-self: center;
