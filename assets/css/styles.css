@@ -30,6 +30,10 @@ h2 {
   font-size: 1.9em;
 }
 
+h1, h2, h3, h4 {
+  color: #ECEFF4;
+}
+
 #container {
   display: flex;
   flex-direction: column;
@@ -243,7 +247,7 @@ h2 {
 .wm .wm__cards h3 {
   margin: 9px 0;
   font-size: 1.5em;
-  color: #D8DEE9;
+  color: #ECEFF4;
 }
 .wm .wm__entry {
   display: flex;
@@ -271,10 +275,10 @@ h2 {
 }
 .wm .wm__bonus {
   text-align: center;
-  color: #D8DEE9;
+  color: #ECEFF4;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 5px;
   margin: 0;
   padding: 0;
 }
@@ -713,6 +717,12 @@ h2 {
     align-self: center;
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .wm .wm__bonus {
+    font-size: 0.9em;
+  }
+  .wm .wm__bonus .wm__theme {
+    min-width: 190px;
   }
 
   .footer .section__content {
