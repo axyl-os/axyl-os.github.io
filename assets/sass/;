@@ -54,10 +54,6 @@ h2 {
   font-size: 1.9em;
 }
 
-h1, h2, h3, h4 {
-  color: $light-3;
-}
-
 #container {
   display: flex;
   flex-direction: column;
@@ -306,6 +302,7 @@ h1, h2, h3, h4 {
     h3 {
       margin: 9px 0;
       font-size: 1.5em;
+      color: $light-1;
     }
   }
 
@@ -340,30 +337,16 @@ h1, h2, h3, h4 {
 
   .wm__bonus {
     text-align: center;
+    color: $light-2;
     display: flex;
     flex-direction: column;
-    gap: 5px;
     margin: 0;
     padding: 0;
-
-    .wm__bonus__name {
-      width: 100px;
-      font-weight: 700;
-    }
 
     li {
       list-style-type: none;
       text-align: right;
       display: flex;
-      gap: 8px;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .wm__theme {
-      flex-basis: auto;
-      flex-grow: 1;
-      min-width: 220px;
     }
   }
 }
@@ -449,19 +432,19 @@ h1, h2, h3, h4 {
 }
 
 .wm__theme.tokyo {
-  @include wm-colorscheme($bg:    #1a1b26,
-                          $fg:    #a9b1d6,
-                          $red:   #f7768e,
-                          $green: #9ece6a,
-                          $blue:  #7aa2f7);
+  @include wm-colorscheme($bg:    #1d1f21,
+                          $fg:    #c5c8c6,
+                          $red:   #cc6666,
+                          $green: #b5bd68,
+                          $blue:  #81a2be);
 }
 
-.wm__theme.gruvbox-material {
-  @include wm-colorscheme($bg:    #222526,
-                          $fg:    #dfbf8e,
-                          $red:   #ea6962,
-                          $green: #a9b665,
-                          $blue:  #7daea3);
+.wm__theme.tokyo {
+  @include wm-colorscheme($bg:    #1d1f21,
+                          $fg:    #c5c8c6,
+                          $red:   #cc6666,
+                          $green: #b5bd68,
+                          $blue:  #81a2be);
 }
 
 .testimonial {
@@ -691,16 +674,11 @@ h1, h2, h3, h4 {
         padding-left: 10px; padding-right: 10px;
       }
     }
-
-    .wm__bonus {
-      font-size: 0.90em;
-
-      .wm__theme {
-        min-width: 190px;
-      }
-    }
   }
 
+  .wm__theme {
+    min-width: 50px !important;
+  }
 
   .footer {
 

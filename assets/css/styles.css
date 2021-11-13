@@ -247,7 +247,6 @@ h1, h2, h3, h4 {
 .wm .wm__cards h3 {
   margin: 9px 0;
   font-size: 1.5em;
-  color: #ECEFF4;
 }
 .wm .wm__entry {
   display: flex;
@@ -275,7 +274,6 @@ h1, h2, h3, h4 {
 }
 .wm .wm__bonus {
   text-align: center;
-  color: #ECEFF4;
   display: flex;
   flex-direction: column;
   gap: 5px;
