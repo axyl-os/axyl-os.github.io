@@ -80,7 +80,7 @@ h1, h2, h3, h4 {
   font-weight: 600;
   font-size: 1.3em;
   margin: 0 9px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .header .header__nav a:hover {
   color: #88C0D0;
@@ -148,18 +148,24 @@ h1, h2, h3, h4 {
 .btn {
   border: 0;
   border-radius: 6px;
-  padding: 8px 18px;
+  padding: 6px 16px;
   font-weight: 600;
   text-decoration: none;
   color: #2E3440;
   background-color: #88C0D0;
+  border: 2px solid #88C0D0;
   user-select: none;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.btn .fas {
+  margin-right: 3px;
+  font-size: 1.1em;
+  margin-top: 3px;
 }
 
 .btn--download:hover {
-  color: #3B4252;
-  background-color: #D8DEE9;
+  color: #88C0D0;
+  background-color: #3B4252;
 }
 
 .btn--install {
@@ -281,7 +287,7 @@ h1, h2, h3, h4 {
   padding: 0;
 }
 .wm .wm__bonus .wm__bonus__name {
-  width: 100px;
+  width: 90px;
   font-weight: 700;
 }
 .wm .wm__bonus li {
@@ -524,17 +530,18 @@ h1, h2, h3, h4 {
 
 .testimonial {
   padding: 0;
-  margin: 10px 0;
+  margin: 40px 0 110px 0;
 }
 .testimonial .section__content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
   width: 65%;
-  max-width: 500px;
+  max-width: 540px;
   margin: 15px 0;
-  padding: 24px 30px;
-  border-radius: 7px;
+  padding: 55px 30px;
+  border-radius: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
   background-color: #434C5E;
   color: #D8DEE9;
@@ -545,6 +552,7 @@ h1, h2, h3, h4 {
 .testimonial .testimonial__quote {
   font-size: 1.4em;
   margin: 10px 0;
+  text-align: center;
 }
 .testimonial .testimonial__author {
   font-size: 1.4em;
@@ -553,8 +561,13 @@ h1, h2, h3, h4 {
 
 .call-to-action {
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 10px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #5E81AC;
+  color: #ECEFF4;
+}
+.call-to-action ::selection {
+  background-color: #88C0D0;
 }
 .call-to-action .section__content {
   display: flex;
@@ -562,17 +575,24 @@ h1, h2, h3, h4 {
   flex-direction: column;
   gap: 30px;
   width: 85%;
-  max-width: 550px;
+  max-width: 750px;
   margin: 70px 0;
 }
 .call-to-action .call-to-action__title {
-  font-size: 1.9em;
+  font-size: 2.1em;
 }
 .call-to-action .call-to-action__title h3 {
-  margin: 8px 0;
+  margin: 10px 0;
+}
+.call-to-action .call-to-action__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .call-to-action .call-to-action__body {
   font-size: 1.4em;
+  max-width: 550px;
+  margin-bottom: 25px;
 }
 .call-to-action .call-to-action__button {
   font-size: 1.1em;
@@ -580,7 +600,15 @@ h1, h2, h3, h4 {
 .call-to-action .btn--download {
   padding: 12px 26px;
   border-radius: 10px;
-  font-size: 1.2em;
+  font-size: 1.3em;
+  color: #5E81AC;
+  background-color: #ECEFF4;
+  border: 2px solid #ECEFF4;
+  transition: all 0.3s ease-in-out;
+}
+.call-to-action .btn--download:hover {
+  color: #ECEFF4;
+  background-color: #5E81AC;
 }
 
 .footer {
@@ -621,6 +649,12 @@ h1, h2, h3, h4 {
   display: flex;
   flex-direction: column;
   gap: 7px;
+}
+.footer a {
+  color: #D8DEE9;
+}
+.footer a:hover {
+  color: #88C0D0;
 }
 .footer .footer__copyright {
   display: flex;

@@ -189,18 +189,25 @@ h1, h2, h3, h4 {
 .btn {
   border: 0;
   border-radius: 6px;
-  padding: 8px 18px;
+  padding: 6px 16px;
   font-weight: 600;
   text-decoration: none;
   color: $dark-1;
   background-color: $blue-2;
+  border: 2px solid $blue-2;
   user-select: none;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.25s ease-in-out;
+
+  .fas {
+    margin-right: 3px;
+    font-size: 1.1em;
+    margin-top: 3px;
+  }
 }
 
 .btn--download:hover {
-  color: $dark-2;
-  background-color: $light-1;
+  color: $blue-2;
+  background-color: $dark-2;
 }
 
 .btn--install {
@@ -347,7 +354,7 @@ h1, h2, h3, h4 {
     padding: 0;
 
     .wm__bonus__name {
-      width: 100px;
+      width: 90px;
       font-weight: 700;
     }
 
