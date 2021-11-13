@@ -508,10 +508,12 @@ h1, h2, h3, h4 {
 }
 
 .call-to-action {
+  $blue-background: #4B6E99;
+
   text-align: center;
   padding-top: 50px;
   padding-bottom: 20px;
-  background-color: $blue-4;
+  background-color: $blue-background;
   color: $light-3;
 
   ::selection {
@@ -556,7 +558,7 @@ h1, h2, h3, h4 {
     padding: 12px 26px;
     border-radius: 10px;
     font-size: 1.3em;
-    color: $blue-4;
+    color: $blue-background;
     background-color: $light-3;
     border: 2px solid $light-3;
     transition: all 0.3s ease-in-out;
@@ -564,7 +566,7 @@ h1, h2, h3, h4 {
 
   .btn--download:hover {
     color: $light-3;
-    background-color: $blue-4;
+    background-color: $blue-background;
   }
 }
 

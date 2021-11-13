@@ -563,7 +563,7 @@ h1, h2, h3, h4 {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 20px;
-  background-color: #5E81AC;
+  background-color: #4B6E99;
   color: #ECEFF4;
 }
 .call-to-action ::selection {
@@ -601,14 +601,14 @@ h1, h2, h3, h4 {
   padding: 12px 26px;
   border-radius: 10px;
   font-size: 1.3em;
-  color: #5E81AC;
+  color: #4B6E99;
   background-color: #ECEFF4;
   border: 2px solid #ECEFF4;
   transition: all 0.3s ease-in-out;
 }
 .call-to-action .btn--download:hover {
   color: #ECEFF4;
-  background-color: #5E81AC;
+  background-color: #4B6E99;
 }
 
 .footer {
