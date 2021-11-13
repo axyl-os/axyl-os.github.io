@@ -511,8 +511,8 @@ h1, h2, h3, h4 {
   $blue-background: #4B6E99;
 
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   background-color: $blue-background;
   color: $light-3;
 
@@ -547,7 +547,7 @@ h1, h2, h3, h4 {
   .call-to-action__body {
     font-size: 1.4em;
     max-width: 550px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 
   .call-to-action__button {
@@ -573,8 +573,7 @@ h1, h2, h3, h4 {
 .footer {
   background-color: $dark-1;
   color: $light-1;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 16px 0 16px 0;
   text-align: left;
   font-size: 0.95em;
 
