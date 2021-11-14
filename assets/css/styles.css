@@ -768,9 +768,13 @@ h1, h2, h3, h4 {
 
   .footer .section__content {
     flex-direction: column-reverse;
+    gap: 0;
   }
   .footer .footer__left {
     gap: 0;
+  }
+  .footer .footer__right {
+    margin-bottom: 15px;
   }
   .footer .footer__logo img {
     display: none;
