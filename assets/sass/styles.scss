@@ -371,7 +371,7 @@ h1, h2, h3, h4 {
     .wm__theme {
       flex-basis: auto;
       flex-grow: 1;
-      min-width: 220px;
+      min-width: 200px;
     }
   }
 }
@@ -383,7 +383,7 @@ h1, h2, h3, h4 {
   align-self: flex-start;
   padding: 4px 8px;
   border-radius: 5px;
-  min-width: 165px;
+  min-width: 175px;
 
   user-select: none;
 
@@ -749,7 +749,7 @@ h1, h2, h3, h4 {
       font-size: 0.90em;
 
       .wm__theme {
-        min-width: 190px;
+        min-width: 180px;
       }
     }
   }

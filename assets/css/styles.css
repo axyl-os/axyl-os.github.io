@@ -302,7 +302,7 @@ h1, h2, h3, h4 {
 .wm .wm__bonus .wm__theme {
   flex-basis: auto;
   flex-grow: 1;
-  min-width: 220px;
+  min-width: 200px;
 }
 
 .wm__theme.everforest {
@@ -312,7 +312,7 @@ h1, h2, h3, h4 {
   align-self: flex-start;
   padding: 4px 8px;
   border-radius: 5px;
-  min-width: 165px;
+  min-width: 175px;
   user-select: none;
   background-color: #2b3339;
   color: #d3c6aa;
@@ -344,7 +344,7 @@ h1, h2, h3, h4 {
   align-self: flex-start;
   padding: 4px 8px;
   border-radius: 5px;
-  min-width: 165px;
+  min-width: 175px;
   user-select: none;
   background-color: #282A36;
   color: #f8f8f2;
@@ -376,7 +376,7 @@ h1, h2, h3, h4 {
   align-self: flex-start;
   padding: 4px 8px;
   border-radius: 5px;
-  min-width: 165px;
+  min-width: 175px;
   user-select: none;
   background-color: #1E222A;
   color: #ABB2BF;
@@ -408,7 +408,7 @@ h1, h2, h3, h4 {
   align-self: flex-start;
   padding: 4px 8px;
   border-radius: 5px;
-  min-width: 165px;
+  min-width: 175px;
   user-select: none;
   background-color: #2E3440;
   color: #D8DEE9;
@@ -440,7 +440,7 @@ h1, h2, h3, h4 {
   align-self: flex-start;
   padding: 4px 8px;
   border-radius: 5px;
-  min-width: 165px;
+  min-width: 175px;
   user-select: none;
   background-color: #1d1f21;
   color: #c5c8c6;
@@ -472,7 +472,7 @@ h1, h2, h3, h4 {
   align-self: flex-start;
   padding: 4px 8px;
   border-radius: 5px;
-  min-width: 165px;
+  min-width: 175px;
   user-select: none;
   background-color: #1a1b26;
   color: #a9b1d6;
@@ -504,7 +504,7 @@ h1, h2, h3, h4 {
   align-self: flex-start;
   padding: 4px 8px;
   border-radius: 5px;
-  min-width: 165px;
+  min-width: 175px;
   user-select: none;
   background-color: #222526;
   color: #dfbf8e;
@@ -763,7 +763,7 @@ h1, h2, h3, h4 {
     font-size: 0.9em;
   }
   .wm .wm__bonus .wm__theme {
-    min-width: 190px;
+    min-width: 180px;
   }
 
   .footer .section__content {
