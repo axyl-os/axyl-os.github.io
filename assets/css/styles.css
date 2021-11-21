@@ -618,6 +618,31 @@ h1, h2, h3, h4 {
   background-color: #4B6E99;
 }
 
+.sponsors {
+  text-align: center;
+  margin: 70px 0;
+}
+.sponsors section__content {
+  display: flex;
+}
+.sponsors .sponsors__header {
+  margin: 20px 0;
+  font-size: 1.1em;
+}
+.sponsors .sponsors__images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 15px;
+}
+.sponsors .sponsors__images img {
+  height: 100px;
+}
+.sponsors .sponsors__images img.fosshost {
+  height: 60px;
+}
+
 .footer {
   background-color: #2E3440;
   color: #D8DEE9;
@@ -764,6 +789,10 @@ h1, h2, h3, h4 {
   }
   .wm .wm__bonus .wm__theme {
     min-width: 180px;
+  }
+
+  .sponsors__images {
+    flex-direction: column;
   }
 
   .footer .section__content {

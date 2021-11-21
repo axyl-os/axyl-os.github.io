@@ -578,6 +578,36 @@ h1, h2, h3, h4 {
   }
 }
 
+.sponsors {
+  text-align: center;
+  margin: 70px 0;
+
+  section__content {
+    display: flex;
+  }
+
+  .sponsors__header {
+    margin: 20px 0;
+    font-size: 1.1em;
+  }
+
+  .sponsors__images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 15px;
+  }
+
+  .sponsors__images img {
+    height: 100px;
+  }
+
+  .sponsors__images img.fosshost {
+    height: 60px;
+  }
+}
+
 .footer {
   background-color: $dark-1;
   color: $light-1;
@@ -754,6 +784,9 @@ h1, h2, h3, h4 {
     }
   }
 
+  .sponsors__images {
+    flex-direction: column;
+  }
 
   .footer {
 
