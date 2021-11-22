@@ -80,7 +80,7 @@ h1, h2, h3, h4 {
   font-weight: 600;
   font-size: 1.3em;
   margin: 0 9px;
-  transition: all 0.12s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 .header .header__nav a:hover {
   color: #88C0D0;
@@ -93,6 +93,20 @@ h1, h2, h3, h4 {
   display: flex;
   flex-flow: row wrap;
   padding: 0;
+}
+.header .header__nav__links .download a {
+  color: #2E3440;
+  margin: 0 8px;
+  background-color: #88C0D0;
+  border-radius: 6px;
+  padding: 2px 12px;
+  border: 2px solid #88C0D0;
+  transition: all 0.25s ease-in-out;
+}
+.header .header__nav__links .download a:hover {
+  color: #88C0D0;
+  border-color: #88C0D0;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .section {
@@ -302,7 +316,7 @@ h1, h2, h3, h4 {
 .wm .wm__bonus .wm__theme {
   flex-basis: auto;
   flex-grow: 1;
-  min-width: 220px;
+  min-width: 200px;
 }
 
 .wm__theme.everforest {
@@ -312,7 +326,7 @@ h1, h2, h3, h4 {
   align-self: flex-start;
   padding: 4px 8px;
   border-radius: 5px;
-  min-width: 165px;
+  min-width: 175px;
   user-select: none;
   background-color: #2b3339;
   color: #d3c6aa;
@@ -344,7 +358,7 @@ h1, h2, h3, h4 {
   align-self: flex-start;
   padding: 4px 8px;
   border-radius: 5px;
-  min-width: 165px;
+  min-width: 175px;
   user-select: none;
   background-color: #282A36;
   color: #f8f8f2;
@@ -376,7 +390,7 @@ h1, h2, h3, h4 {
   align-self: flex-start;
   padding: 4px 8px;
   border-radius: 5px;
-  min-width: 165px;
+  min-width: 175px;
   user-select: none;
   background-color: #1E222A;
   color: #ABB2BF;
@@ -408,7 +422,7 @@ h1, h2, h3, h4 {
   align-self: flex-start;
   padding: 4px 8px;
   border-radius: 5px;
-  min-width: 165px;
+  min-width: 175px;
   user-select: none;
   background-color: #2E3440;
   color: #D8DEE9;
@@ -440,7 +454,7 @@ h1, h2, h3, h4 {
   align-self: flex-start;
   padding: 4px 8px;
   border-radius: 5px;
-  min-width: 165px;
+  min-width: 175px;
   user-select: none;
   background-color: #1d1f21;
   color: #c5c8c6;
@@ -472,7 +486,7 @@ h1, h2, h3, h4 {
   align-self: flex-start;
   padding: 4px 8px;
   border-radius: 5px;
-  min-width: 165px;
+  min-width: 175px;
   user-select: none;
   background-color: #1a1b26;
   color: #a9b1d6;
@@ -504,7 +518,7 @@ h1, h2, h3, h4 {
   align-self: flex-start;
   padding: 4px 8px;
   border-radius: 5px;
-  min-width: 165px;
+  min-width: 175px;
   user-select: none;
   background-color: #222526;
   color: #dfbf8e;
@@ -618,6 +632,31 @@ h1, h2, h3, h4 {
   background-color: #4B6E99;
 }
 
+.sponsors {
+  text-align: center;
+  margin: 70px 0;
+}
+.sponsors section__content {
+  display: flex;
+}
+.sponsors .sponsors__header {
+  margin: 20px 0;
+  font-size: 1.1em;
+}
+.sponsors .sponsors__images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 15px;
+}
+.sponsors .sponsors__images img {
+  height: 100px;
+}
+.sponsors .sponsors__images img.fosshost {
+  height: 60px;
+}
+
 .footer {
   background-color: #2E3440;
   color: #D8DEE9;
@@ -696,7 +735,7 @@ h1, h2, h3, h4 {
     align-items: flex-end;
     position: absolute;
     top: 45px;
-    font-size: 1.15em;
+    font-size: 1.1em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
     background-color: #2E3440;
     border-radius: 6px;
@@ -704,6 +743,9 @@ h1, h2, h3, h4 {
     padding-left: 25px;
     padding-right: 2px;
     transition: all 0.2s ease-out;
+  }
+  .header .header__nav .header__nav__links .download {
+    margin: 7px 0;
   }
   .header .header__nav .header__nav__links.responsive {
     display: flex;
@@ -763,7 +805,11 @@ h1, h2, h3, h4 {
     font-size: 0.9em;
   }
   .wm .wm__bonus .wm__theme {
-    min-width: 190px;
+    min-width: 180px;
+  }
+
+  .sponsors__images {
+    flex-direction: column;
   }
 
   .footer .section__content {
