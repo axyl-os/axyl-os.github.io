@@ -108,7 +108,7 @@ h1, h2, h3, h4 {
       font-weight: 600;
       font-size: 1.3em;
       margin: 0 9px;
-      transition: all 0.12s ease-in-out;
+      transition: all 0.25s ease-in-out;
     }
 
     a:hover {
@@ -126,6 +126,22 @@ h1, h2, h3, h4 {
     display: flex;
     flex-flow: row wrap;
     padding: 0;
+
+    .download a {
+      color: $dark-1;
+      margin: 0 8px;
+      background-color: $blue-2;
+      border-radius: 6px;
+      padding: 2px 12px;
+      border: 2px solid $blue-2;
+      transition: all 0.25s ease-in-out;
+    }
+
+    .download a:hover {
+      color: $blue-2;
+      border-color: $blue-2;
+      background-color: rgba(0, 0, 0, 0);
+    }
   }
 }
 
@@ -698,7 +714,7 @@ h1, h2, h3, h4 {
         align-items: flex-end;
         position: absolute;
         top: 45px;
-        font-size: 1.15em;
+        font-size: 1.10em;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
 
         background-color: $dark-1;
@@ -707,6 +723,10 @@ h1, h2, h3, h4 {
         padding-left: 25px;
         padding-right: 2px;
         transition: all 0.20s ease-out;
+
+        .download {
+          margin: 7px 0;
+        }
       }
 
       .header__nav__links.responsive {
