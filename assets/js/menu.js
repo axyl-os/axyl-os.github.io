@@ -4,11 +4,19 @@ const navLinks = document.querySelector(".header__nav__links");
 burgerButton.addEventListener("click", function () {
   if (!this.classList.contains("responsive")) {
     this.classList.add("responsive");
-    navLinks.classList.add("appear");
+
+    if (!navLinks.classList.contains("disappear")) {
+      navLinks.classList.add("appear");
+    }
+
   } else {
     this.classList.remove("responsive");
     navLinks.classList.remove("responsive");
-    navLinks.classList.add("disappear");
+
+    if (!navLinks.classList.contains("appear")) {
+      navLinks.classList.add("disappear");
+    }
+    
   }
 });
 
