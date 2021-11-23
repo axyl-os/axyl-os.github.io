@@ -1,5 +1,5 @@
-let burgerButton = document.querySelector(".header__nav__btn");
-let navLinks = document.querySelector(".header__nav__links");
+const burgerButton = document.querySelector(".header__nav__btn");
+const navLinks = document.querySelector(".header__nav__links");
 
 burgerButton.addEventListener("click", function () {
 
