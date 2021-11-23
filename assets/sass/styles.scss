@@ -682,6 +682,28 @@ h1, h2, h3, h4 {
   }
 }
 
+@keyframes navdown {
+  from {
+    transform: translate(0, -40px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes navup {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(0, -40px);
+    opacity: 0;
+  }
+}
+
 @media all and (max-width: 600px) {
   .header {
     .header__logo {
@@ -716,6 +738,7 @@ h1, h2, h3, h4 {
         top: 45px;
         font-size: 1.10em;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+        margin-top: 15px;
 
         background-color: $dark-1;
         border-radius: 6px;
@@ -732,7 +755,19 @@ h1, h2, h3, h4 {
       .header__nav__links.responsive {
         display: flex;
         opacity: 1;
-        margin-top: 15px;
+      }
+
+      .header__nav__links.appear {
+        display: flex;
+        opacity: 1;
+        animation-name: navdown;
+        animation-duration: 0.25s;
+      }
+
+      .header__nav__links.disappear {
+        display: flex;
+        animation-name: navup;
+        animation-duration: 0.25s;
       }
 
       li {

@@ -2,7 +2,21 @@ const burgerButton = document.querySelector(".header__nav__btn");
 const navLinks = document.querySelector(".header__nav__links");
 
 burgerButton.addEventListener("click", function () {
+  if (!this.classList.contains("responsive")) {
+    this.classList.add("responsive");
+    navLinks.classList.add("appear");
+  } else {
+    this.classList.remove("responsive");
+    navLinks.classList.remove("responsive");
+    navLinks.classList.add("disappear");
+  }
+});
 
-  burgerButton.classList.toggle("responsive");
-  navLinks.classList.toggle("responsive");
+navLinks.addEventListener("animationend", (e) => {
+  if (e.target.classList.contains("appear")) {
+    e.target.classList.add("responsive");
+    e.target.classList.remove("appear");
+  } else if (e.target.classList.contains("disappear")) {
+    e.target.classList.remove("disappear");
+  }
 });
