@@ -16,3 +16,6 @@ Axyl-OS takes steps to make you experiance with the Arch Ecosystem better, more 
 ###### What Happened to the Old Site?
 
 since we dont have a maintainer for the site we have had to temporarily replace it with this one as in our persuit of the best we were forced to admit the site needs more attention then it was getting.
+
+
+[<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg' alt='discord' height='40'>](https://discord.gg/qAXMkQdwjj) [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'>](https://github.com/Ayxl-OS)
